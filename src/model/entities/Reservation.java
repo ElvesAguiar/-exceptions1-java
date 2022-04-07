@@ -11,6 +11,30 @@ public class Reservation {
 
 	}
 
+	public Integer getRoomNumber() {
+		return roomNumber;
+	}
+
+	public void setRoomNumber(Integer roomNumber) {
+		this.roomNumber = roomNumber;
+	}
+
+	public Date getCheckin() {
+		return checkin;
+	}
+
+	public void setCheckin(Date checkin) {
+		this.checkin = checkin;
+	}
+
+	public Date getCheckout() {
+		return checkout;
+	}
+
+	public void setCheckout(Date checkout) {
+		this.checkout = checkout;
+	}
+
 	public Reservation(Integer roomNumber, Date checkin, Date checkout) {
 		this.roomNumber = roomNumber;
 		this.checkin = checkin;
@@ -22,7 +46,13 @@ public class Reservation {
 	}
 
 	public void updateDates(Date checkin, Date checkout) {
-
 	}
+
+	@Override
+	public String toString() {
+		return "Reservation [roomNumber=" + roomNumber + ", checkin=" + checkin + ", checkout=" + checkout + "]";
+	}
+	
+	
 
 }
